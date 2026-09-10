@@ -1,0 +1,34 @@
+{
+  "name": "burnish",
+  "version": "1.1.0",
+  "description": "A design skill for AI coding assistants. Makes the UIs they generate look made, not generated.",
+  "keywords": [
+    "claude",
+    "claude-code",
+    "cursor",
+    "codex",
+    "skill",
+    "design",
+    "ui",
+    "anti-ai-slop",
+    "typography",
+    "oklch"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "skills"
+  ],
+  "skill": {
+    "entry": "skills/burnish/SKILL.md",
+    "references": "skills/burnish/references",
+    "harnesses": [
+      "claude-code",
+      "cursor",
+      "codex"
+    ]
+  },
+  "scripts": {
+    "serve": "python3 -m http.server --directory site 4173"
+  }
+}
